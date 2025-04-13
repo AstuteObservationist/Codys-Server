@@ -665,9 +665,7 @@ export default class Player extends PathingEntity {
     }
 
     updateEnergy() {
-        if (this.delayed) {
-            return;
-        }
+        return;
         if (this.stepsTaken < 2) {
             const recovered = ((this.baseLevels[PlayerStat.AGILITY] / 9) | 0) + 8;
             this.runenergy = Math.min(this.runenergy + recovered, 10000);

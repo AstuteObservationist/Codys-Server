@@ -67,6 +67,7 @@ if (map_production = true) {
     last_login_info;
 }
 
+~add_runite_rock;
 [proc,initalltabs]
 ~update_weapon_category(inv_getobj(worn, ^wearpos_rhand));
 if_settab(stats, ^tab_skills);
